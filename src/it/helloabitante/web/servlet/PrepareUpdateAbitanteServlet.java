@@ -13,17 +13,14 @@ import it.helloabitante.model.Abitante;
 import it.helloabitante.service.MyServiceFactory;
 import it.helloabitante.service.abitante.AbitanteService;
 
-/**
- * Servlet implementation class PrepareUpdateAbitanteServlet
- */
+
 @WebServlet("/PrepareUpdateAbitanteServlet")
 public class PrepareUpdateAbitanteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-    public PrepareUpdateAbitanteServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
+	public PrepareUpdateAbitanteServlet() {
+        	super();      
+    	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String idAbitanteDaModificare = request.getParameter("idDaInviareComeParametro");
@@ -42,12 +39,6 @@ public class PrepareUpdateAbitanteServlet extends HttpServlet {
 		
 		RequestDispatcher rd = request.getRequestDispatcher("modifica.jsp");
 		rd.forward(request, response);
-	}
-
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
 	}
 
 }
