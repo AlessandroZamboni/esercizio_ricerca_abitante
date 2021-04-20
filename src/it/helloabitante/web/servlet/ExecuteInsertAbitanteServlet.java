@@ -35,10 +35,6 @@ public class ExecuteInsertAbitanteServlet extends HttpServlet {
 
 		AbitanteService abitanteServiceInstance = MyServiceFactory.getAbitanteServiceInstance();
 
-		System.out.println(nomeParameter + " " + cognomeParameter);
-		System.out.println(etaParameter + " " + codiceFiscaleParameter);
-		System.out.println(mottoDiVitaParaMeter);
-
 		String destinazione = null;
 		RequestDispatcher rd = null;
 
