@@ -14,9 +14,6 @@ import it.helloabitante.model.Abitante;
 import it.helloabitante.service.MyServiceFactory;
 import it.helloabitante.service.abitante.AbitanteService;
 
-/**
- * Servlet implementation class ExecuteInsertAbitanteServlet
- */
 @WebServlet("/ExecuteInsertAbitanteServlet")
 public class ExecuteInsertAbitanteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
